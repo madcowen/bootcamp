@@ -1,0 +1,13 @@
+##How to make a local folder and communicate with git online (remote github account)
+
+#first make the directory online, then in the local folder you want:
+mkdir directoryName
+#inside the directory
+git init
+git remote add origin https://github.com/madcowen/bootcamp-2016.git
+git remote -v  		#to check that it worked
+git status			#tells you the status of the files in the folder as they relate to the remote directory (committed or not)
+git add readme.txt	#or "git add ." to add all of the files
+git commit -m "this is my first draft of the readme"		#write a message for the commit
+git push origin master
+git pull origin master #if you make a change remotely and want to pull it in
